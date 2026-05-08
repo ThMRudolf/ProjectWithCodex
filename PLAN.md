@@ -147,6 +147,13 @@ tests/
 - Agregar pruebas con `TestClient` para flujos principales.
 - Documentar instalación, ejecución y pruebas en el README.
 
+### Fase 6: Despliegue en Render
+
+- Agregar `requirements.txt` para instalación de dependencias en Render.
+- Agregar `.python-version` para fijar Python 3.12 en el servicio.
+- Agregar `render.yaml` con build command, start command y health check.
+- Configurar `BACKEND_CORS_ORIGINS` en Render con la URL del frontend de producción.
+- Validar `/health` y `/docs` después del deploy.
 ## Criterios de aceptación
 
 - La API inicia con `uvicorn app.main:app --reload`.
@@ -158,3 +165,4 @@ tests/
 - Se puede programar un partido y registrar su resultado.
 - Los endpoints públicos solo exponen torneos publicados.
 - Las pruebas automatizadas cubren los flujos principales.
+- Render despliega el servicio usando `render.yaml` y el endpoint `/health` responde correctamente.
