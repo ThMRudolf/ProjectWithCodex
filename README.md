@@ -38,7 +38,6 @@ La documentación interactiva queda disponible en:
 - `http://127.0.0.1:8000/docs`
 - `http://127.0.0.1:8000/redoc`
 
-
 ## Despliegue en Render
 
 Este repositorio incluye `render.yaml`, `requirements.txt` y `.python-version` para levantar el backend como un Web Service de Render.

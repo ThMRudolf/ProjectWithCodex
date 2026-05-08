@@ -154,7 +154,6 @@ tests/
 - Agregar `render.yaml` con build command, start command y health check.
 - Configurar `BACKEND_CORS_ORIGINS` en Render con la URL del frontend de producción.
 - Validar `/health` y `/docs` después del deploy.
-
 ## Criterios de aceptación
 
 - La API inicia con `uvicorn app.main:app --reload`.
